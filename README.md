@@ -1,6 +1,11 @@
 # Universal Analytics for Python
 
+
 This library provides a Python interface to Google Analytics, supporting the Universal Analytics Measurement Protocol, with an interface modeled (loosely) after Google's `analytics.js`.
+
+# Status
+
+| CircleCI | [![CircleCI](https://circleci.com/gh/lyndsysimon/universal-analytics-python.svg?style=svg)](https://circleci.com/gh/lyndsysimon/universal-analytics-python) |
 
 # Usage
 
