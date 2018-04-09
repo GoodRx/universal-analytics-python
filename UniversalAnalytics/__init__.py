@@ -1,1 +1,1 @@
-import Tracker
+from UniversalAnalytics import Tracker
