@@ -103,12 +103,9 @@ class HTTPRequest(object):
         """
         Activate debugging on urllib2.
         """
-        if six.PY2:
-            handler = HTTPSHandler(debuglevel=1)
-            opener = build_opener(handler)
-            install_opener(opener)
-        else:
-            http_client.HTTPConnection.debuglevel = 1
+        handler = HTTPSHandler(debuglevel=1)
+        opener = build_opener(handler)
+        install_opener(opener)
 
     @classmethod
     def fixUTF8(cls, data):  # Ensure proper encoding for UA's servers...

@@ -16,6 +16,7 @@
 import unittest
 
 # Third party imports
+from six.moves import cStringIO as StringIO
 from six.moves import urllib
 
 # Local imports
@@ -26,7 +27,7 @@ from UniversalAnalytics import Tracker
 class UAMPythonTestCase(unittest.TestCase):
 
     def setUp(self):
-        self._buffer = HTTPLog.StringIO()
+        self._buffer = StringIO()
         # Capture HTTP output in readible fashion
         HTTPLog.consume(self._buffer)
         Tracker.HTTPPost.debug()  # Enabled debugging from urllib2

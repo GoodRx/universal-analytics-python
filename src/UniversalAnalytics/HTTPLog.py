@@ -17,7 +17,6 @@ import re
 import sys
 
 # Third party libraries
-from six.moves import cStringIO as StringIO  # Used by tests
 import six
 
 
